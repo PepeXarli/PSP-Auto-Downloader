@@ -29,7 +29,7 @@
 
 ---
 
-## 🛠️ Requisitos Previos
+## 🛠️ Requisitos previos
 
 Antes de empezar, asegúrate de tener lo siguiente:
 
@@ -42,7 +42,7 @@ No necesitas descargar `mciso.exe` por separado: viene incluido en el repositori
 
 ---
 
-## 🚀 Instalación y Configuración Paso a Paso
+## 🚀 Instalación y configuración paso a paso
 
 ### 1. Instalar Python
 
@@ -78,7 +78,7 @@ Tienes dos opciones. Si eres principiante, te recomendamos la primera.
 
 #### Opción A: Descargar el proyecto como ZIP (recomendada)
 
-1. Abre la página del repositorio en GitHub.
+1. Abre el [repositorio del proyecto en GitHub](https://github.com/PepeXarli/PSP-Auto-Downloader).
 2. Pulsa el botón verde **Code**.
 3. Selecciona **Download ZIP**.
 4. Cuando termine la descarga, haz clic derecho sobre el archivo ZIP y selecciona **Extraer todo**.
@@ -106,19 +106,28 @@ PSP-Auto-Downloader/
 ├── README.md
 ├── LICENSE
 ├── LICENSE-mciso.txt
-└── THIRD_PARTY_NOTICES.md
+├── THIRD_PARTY_NOTICES.md
+└── psp-mciso/
+    ├── LICENSE
+    ├── README.md
+    └── src/
+        ├── ciso.h
+        ├── Makefile
+        ├── mciso.1
+        └── mciso.c
 ```
 
-Los nombres pueden variar según cómo hayas llamado a tu script.
+Los nombres y la estructura pueden variar ligeramente según la versión.
 
 - `app.py`: el script de Python.
 - `mciso.exe`: la herramienta de conversión incluida.
 - `README.md`: este archivo de instrucciones.
-- `LICENSE`: la licencia de tu propio proyecto, si corresponde.
-- `LICENSE-mciso.txt`: el texto de la licencia GPL-3.0 de mciso.
+- `LICENSE`: la licencia MIT del código original del proyecto.
+- `LICENSE-mciso.txt`: el texto de la licencia GPL-3.0 de `mciso`.
 - `THIRD_PARTY_NOTICES.md`: los avisos de licencia y créditos del programa de terceros.
+- `psp-mciso/`: código fuente y archivos de licencia del proyecto original `psp-mciso`.
 
-**Importante:** conserva los avisos de licencia que acompañan a `mciso`. No sustituyas su licencia por la MIT de tu propio código. Antes de publicar el ejecutable, comprueba que su redistribución cumple las condiciones de la licencia aplicable.
+**Importante:** conserva los avisos de licencia que acompañan a `mciso`. No sustituyas su licencia por la MIT de tu propio código.
 
 ### 4. Instalar Internet Archive CLI
 
@@ -204,11 +213,7 @@ Una vez completados los pasos anteriores:
    python app.py
    ```
 
-   Si tu script tiene otro nombre, sustituye `app.py` por el nombre correspondiente. Por ejemplo:
-
-   ```bash
-   python psp_converter.py
-   ```
+   Si tu script tiene otro nombre, sustituye `app.py` por el nombre correspondiente.
 
 4. Espera a que termine el procesamiento. El tiempo dependerá de la conexión, el tamaño de los archivos y la velocidad del ordenador.
 
@@ -301,11 +306,17 @@ El autor no se hace responsable del uso indebido del programa ni de las consecue
 
 ## 📄 Licencias
 
-El código original de este proyecto puede distribuirse bajo la licencia MIT, siempre que seas titular de los derechos correspondientes y mantengas los avisos requeridos.
+### Código original de PSP Auto Downloader
 
-El ejecutable `mciso.exe` es un componente de terceros asociado al proyecto [sindastra/psp-mciso](https://github.com/sindastra/psp-mciso), que indica la licencia GPL-3.0. Su distribución está sujeta a los términos de esa licencia y a los avisos correspondientes.
+El código original de este proyecto, incluido `app.py`, se distribuye bajo la **licencia MIT**. Consulta el archivo [`LICENSE`](./LICENSE) para conocer sus términos.
 
-Consulta la licencia original de `mciso` antes de redistribuirlo y conserva la información de copyright y licencia que corresponda a esa versión.
+### Software de terceros: mciso
+
+El ejecutable `mciso.exe` es software de terceros procedente del proyecto [sindastra/psp-mciso](https://github.com/sindastra/psp-mciso), que identifica la **GNU General Public License v3.0 (GPL-3.0)** como su licencia.
+
+El código fuente correspondiente a la versión utilizada se incluye en la carpeta [`psp-mciso/`](./psp-mciso/). También puedes consultar la [versión de origen utilizada](https://github.com/sindastra/psp-mciso/tree/ea340d312529a0834a24b49504bb0db4021e3ee9) y los [avisos de terceros](./THIRD_PARTY_NOTICES.md).
+
+La licencia MIT de este proyecto no sustituye ni modifica la licencia aplicable a `mciso.exe` o a su código fuente. Al redistribuir el ejecutable, deben respetarse los términos de la GPL-3.0 y conservarse los avisos de licencia y copyright correspondientes.
 
 ---
 
@@ -327,6 +338,8 @@ A Python script that downloads PSP CSO files from configured Internet Archive re
 - Improved handling of conversion errors.
 - Included converter for easier setup.
 
+---
+
 ### 🛠️ Requirements
 
 - Windows 10 or Windows 11.
@@ -336,6 +349,8 @@ A Python script that downloads PSP CSO files from configured Internet Archive re
 - A PSP Memory Stick/SD card or another destination folder with enough free space.
 
 You do not need to download `mciso.exe` separately when it is included in the project ZIP.
+
+---
 
 ### 🚀 Step-by-step installation
 
@@ -360,7 +375,7 @@ You do not need to download `mciso.exe` separately when it is included in the pr
 3. Extract the ZIP file.
 4. Open the extracted folder.
 
-The project files should include the Python script, `mciso.exe`, and the README.
+The project files include the Python script, `mciso.exe`, the README, license information, and the third-party source directory.
 
 **Option B — Git clone**
 
@@ -382,10 +397,18 @@ PSP-Auto-Downloader/
 ├── README.md
 ├── LICENSE
 ├── LICENSE-mciso.txt
-└── THIRD_PARTY_NOTICES.md
+├── THIRD_PARTY_NOTICES.md
+└── psp-mciso/
+    ├── LICENSE
+    ├── README.md
+    └── src/
+        ├── ciso.h
+        ├── Makefile
+        ├── mciso.1
+        └── mciso.c
 ```
 
-The script filename may differ. Keep the third-party license notices applicable to `mciso.exe`.
+The exact structure may vary slightly between versions. Keep the third-party license notices applicable to `mciso.exe`.
 
 #### 4. Install Internet Archive CLI
 
@@ -441,6 +464,8 @@ Replace `app.py` with your actual script filename if necessary.
 
 The script will attempt to download the configured CSO files, convert them to ISO, skip existing ISO files, and clean up temporary files according to its processing flow.
 
+---
+
 ### ❓ Troubleshooting
 
 - **Python not recognized:** Check your Python installation and PATH settings, or try `py app.py`.
@@ -449,26 +474,50 @@ The script will attempt to download the configured CSO files, convert them to IS
 - **Download failure:** Verify the filename, repository availability, and access permissions.
 - **Conversion failure:** Check the CSO file, available disk space, and `mciso.exe`.
 
+---
+
 ### 📚 Data sources
+
+The script uses the configured repositories:
 
 - [psp_20220507](https://archive.org/download/psp_20220507)
 - [psp_20220507_2](https://archive.org/download/psp_20220507_2)
 
+File availability and access conditions may change over time.
+
+---
+
 ### 🤝 Credits
 
-- [sindastra / psp-mciso](https://github.com/sindastra/psp-mciso) — third-party CSO conversion tool.
-- [Internet Archive](https://archive.org/) — digital preservation and file hosting.
+- [**sindastra / psp-mciso**](https://github.com/sindastra/psp-mciso) — third-party CSO conversion tool.
+- [**Internet Archive**](https://archive.org/) — digital preservation and file hosting.
+
+`mciso.exe` is third-party software and was not created as part of this project. See the third-party notices and original license for the applicable terms.
+
+---
 
 ### ⚖️ Disclaimer
 
-This project is provided for educational and software-preservation purposes. Users are responsible for ensuring they have the legal right to download, store, and convert the files they use.
+This project is provided for educational and software-preservation purposes.
 
-This project does not host or include game files. The author is not responsible for misuse of the script or any consequences arising from its use.
+Users are responsible for ensuring they have the legal right to download, store, and convert the files they use. Please respect copyright, Internet Archive's terms of use, and the laws applicable in your country.
+
+This project does not host or include game files. The script uses the `ia` tool to request files from the configured repositories.
+
+The author is not responsible for misuse of the program or any consequences arising from its use.
+
+---
 
 ### 📄 Licenses
 
-The original code of this project may be distributed under the MIT License if you hold the applicable rights and preserve the required notices.
+#### Original PSP Auto Downloader code
 
-The included `mciso.exe` is a third-party component associated with [sindastra/psp-mciso](https://github.com/sindastra/psp-mciso), which identifies GPL-3.0 as its license. Redistribution is subject to that license and its applicable notices.
+The original code of this project, including `app.py`, is distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for its terms.
 
-Please consult the original license and preserve the relevant copyright and license information before redistributing the executable.
+#### Third-party software: mciso
+
+The `mciso.exe` executable is third-party software from [sindastra/psp-mciso](https://github.com/sindastra/psp-mciso), which identifies the **GNU General Public License v3.0 (GPL-3.0)** as its license.
+
+The source code corresponding to the version used by this project is included in the [`psp-mciso/`](./psp-mciso/) directory. You can also consult the [upstream source version](https://github.com/sindastra/psp-mciso/tree/ea340d312529a0834a24b49504bb0db4021e3ee9) and the [third-party notices](./THIRD_PARTY_NOTICES.md).
+
+This project's MIT License does not replace or modify the license applicable to `mciso.exe` or its source code. When redistributing the executable, the applicable GPL-3.0 terms must be respected and the relevant copyright and license notices must be preserved.
