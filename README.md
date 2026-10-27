@@ -1,5 +1,7 @@
 # 🎮 PSP Auto Downloader & CSO Converter
 
+[🇪🇸 Español](#español) · [🇬🇧 English](#english)
+
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg)](#)
@@ -11,6 +13,8 @@
 > **¡Ahora `mciso.exe` viene incluido en el proyecto!** No necesitas buscarlo ni descargarlo por separado.
 
 ---
+
+## Español
 
 ## 🌟 Características
 
@@ -84,14 +88,12 @@ Dentro encontrarás los archivos del proyecto, incluido `mciso.exe`.
 
 #### Opción B: Clonar el repositorio con Git
 
-Si tienes Git instalado, abre una terminal y ejecuta los siguientes comandos, sustituyendo la URL de ejemplo por la dirección real de tu repositorio:
+Si tienes Git instalado, abre una terminal y ejecuta los siguientes comandos:
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-cd TU_REPOSITORIO
+git clone https://github.com/PepeXarli/PSP-Auto-Downloader.git
+cd PSP-Auto-Downloader
 ```
-
-> ⚠️ `TU_USUARIO/TU_REPOSITORIO` es un ejemplo. Debes sustituirlo por el nombre real de tu usuario y repositorio de GitHub.
 
 ### 3. Comprobar los archivos descargados
 
@@ -103,6 +105,7 @@ PSP-Auto-Downloader/
 ├── mciso.exe
 ├── README.md
 ├── LICENSE
+├── LICENSE-mciso.txt
 └── THIRD_PARTY_NOTICES.md
 ```
 
@@ -112,6 +115,7 @@ Los nombres pueden variar según cómo hayas llamado a tu script.
 - `mciso.exe`: la herramienta de conversión incluida.
 - `README.md`: este archivo de instrucciones.
 - `LICENSE`: la licencia de tu propio proyecto, si corresponde.
+- `LICENSE-mciso.txt`: el texto de la licencia GPL-3.0 de mciso.
 - `THIRD_PARTY_NOTICES.md`: los avisos de licencia y créditos del programa de terceros.
 
 **Importante:** conserva los avisos de licencia que acompañan a `mciso`. No sustituyas su licencia por la MIT de tu propio código. Antes de publicar el ejecutable, comprueba que su redistribución cumple las condiciones de la licencia aplicable.
@@ -305,7 +309,7 @@ Consulta la licencia original de `mciso` antes de redistribuirlo y conserva la i
 
 ---
 
-## 🇬🇧 English
+## English
 
 # 🎮 PSP Auto Downloader & CSO Converter
 
@@ -351,7 +355,7 @@ You do not need to download `mciso.exe` separately when it is included in the pr
 
 **Option A — ZIP download (recommended)**
 
-1. Open your GitHub repository.
+1. Open the [GitHub repository](https://github.com/PepeXarli/PSP-Auto-Downloader).
 2. Click **Code**, then **Download ZIP**.
 3. Extract the ZIP file.
 4. Open the extracted folder.
@@ -360,11 +364,11 @@ The project files should include the Python script, `mciso.exe`, and the README.
 
 **Option B — Git clone**
 
-If Git is installed, run the following commands, replacing the example URL with your actual repository URL:
+If Git is installed, run these commands:
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-cd TU_REPOSITORIO
+git clone https://github.com/PepeXarli/PSP-Auto-Downloader.git
+cd PSP-Auto-Downloader
 ```
 
 #### 3. Check the project files
@@ -377,6 +381,7 @@ PSP-Auto-Downloader/
 ├── mciso.exe
 ├── README.md
 ├── LICENSE
+├── LICENSE-mciso.txt
 └── THIRD_PARTY_NOTICES.md
 ```
 
