@@ -14,3 +14,6 @@ This project includes `mciso.exe`, a third-party executable from the following p
 The original license and copyright notices must be preserved. See the upstream project for the original source code, license text, and release information.
 
 The source code for the included `mciso.exe` is provided in the [`psp-mciso/`](./psp-mciso/) directory of this repository. The original upstream project is available at https://github.com/sindastra/psp-mciso.
+
+- Version distributed: vea340d312529a0834a24b49504bb0db4021e3ee9
+- Source code: [Source code for this release](https://github.com/sindastra/psp-mciso/tree/vea340d312529a0834a24b49504bb0db4021e3ee9)
