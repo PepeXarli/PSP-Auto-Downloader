@@ -55,6 +55,9 @@ JUEGOS = [
     "Burnout Dominator (Europe) (En,Fr,De,Es,It).cso",
     "Assassin's Creed - Bloodlines (Europe) (En,Fr,De,Es,It,Ru).cso",
     "Need for Speed - Most Wanted - 5-1-0 (Europe) (En,Fr,De,Es,It).cso",
+    "FIFA Street 2 (Europe) (En,Fr,De).cso",
+    "Invizimals - Shadow Zone (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl).cso",
+    "Formula One 06 (Europe) (En,Fr,De,Es,It,Pt,Fi).cso"
 ]
 
 
